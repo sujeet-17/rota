@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/book.css">
+</head>
+<body>
+    <div id="effect">
+        <ul class="nav">
+            <a href="index.html" class="nav_size">
+                <li class="nav_size1">Home</li>
+            </a>
+            <a href="plans.html" class="nav_size">
+                <li class="nav_size1">Work</li>
+            </a>
+            <a href="about.html" class="nav_size">
+                <li class="nav_size1">About</li>
+            </a>
+            <a href="contact.html" class="nav_size">
+                <li class="nav_size1">Contact</li>
+            </a>
+            <a href="book.html" class="nav_size">
+                <li class="nav_size1"><u>Book a call</u></li>
+            </a>
+        </ul>
+    </div>
+    <button id="butsss" onclick="demo()"><img src="./image/menu.png"></button>
+
+    <div class="appointment">Booking An Appointment</div>
+    <div class="box">
+         <div class="box1">
+            <img src="./image/man.jpg" class="man">
+            <h1>Chris Robinson</h1>
+            <h2>15 min meeting</h2>
+            <h3><img src="./image/meet.png" class="gm">Google Meeting</h3>
+         </div>
+         <div class="box2">
+            <div class="sumbition">
+            <div class="sumbit">Your name *</div>
+            <input type="text" name="name" placeholder="your name" id="name">
+            <div class="sumbit">Your email *</div>
+            <input type="email" name="email" placeholder="your email" id="email" oninput="validation()">
+            <div class="sumbit">Your number *</div>
+            <input type="number" name="number" placeholder="phone number" id="number" oninput="validation1()">
+            <div class="sumbit1">Additional notes *</div>
+            <input type="text1" name="comments" placeholder="please share your thought that help for our meeting" id="comments">
+            <!-- <button class="send">SEND</button> -->
+             <button class="send" onclick="store()">SEND</button>
+        </div>
+         </div>
+         <div class="box3">
+            <div class="sumbit2">Your date *</div>
+            <input type="date" name="date" id="date" >
+            <div class="sumbit3">Fix your time *</div>
+            <input type="time" name="time" id="time">
+         </div>
+    </div>
+    <script src="./javascript/book.js"></script>
+    <script src="./jquery2.js"></script>
+</body>
+</html>
